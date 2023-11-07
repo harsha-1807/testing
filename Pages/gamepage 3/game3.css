@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&family=Noto+Sans+JP:wght@300&family=Oswald:wght@600&family=Press+Start+2P&family=Roboto:wght@300&display=swap');
+
+* { 
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box; 
+} 
+
+body { 
+	height: 100vh; 
+	width: 100vw; 
+} 
+
+.background{ 
+	height: 100%; 
+	width: 100%; 
+	background-image: url(../assets/bg.png);
+    /* background-color: aquamarine; */
+	background-repeat: no-repeat;
+	background-size: cover;
+    
+} 
+
+
+.bird { 
+	height: 50px; 
+	width: 50px; 
+	position: fixed; 
+	top: 40vh; 
+	left: 30vw; 
+	z-index: 100; 
+} 
+h1{
+	position: fixed; 
+	z-index: 10; 
+	height: 10vh;
+	width: 600px; 
+	font-size: 25px; 
+	font-weight: 100;  
+	top: 42vh; 
+	left: 1px; 
+	text-align: center; 
+	font-family: 'Press Start 2P';
+	color: white; 
+	text-transform: uppercase
+}
+
+.pipe_sprite { 
+	position: fixed; 
+	top: 40vh; 
+	left: 100vw;
+	height: 70vh; 
+	width: 6vw;
+	
+	background-image: url(../assets/STICK2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+} 
+
+.message { 
+	position: fixed; 
+	z-index: 10; 
+	height: 10vh;
+	width: 700px; 
+	font-size: 20px; 
+	font-weight: 100;  
+	top: 12vh; 
+	left: 30vw; 
+	text-align: center; 
+	font-family: 'Press Start 2P';
+
+
+} 
+
+.score { 
+	position: fixed; 
+	z-index: 10; 
+	height: 10vh; 
+	font-size: 20px; 
+	font-family: 'Press Start 2P';
+	font-weight: 100; 
+	color: goldenrod; 
+	top: 10px; 
+	left: 10px;
+
+} 
+
+.score_val { 
+	color: gold; 
+} 
+
+.name,.score_title{
+	text-transform: uppercase
+}
+
+@media only screen and (max-width:600px){
+	.message{
+		font-size: 10px;
+		position: fixed;
+		/* top: 0; */
+		left: 80px;
+		width: 280px;
+	}
+	#pname{
+		font-size: small;
+	}
+}
